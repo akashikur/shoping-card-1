@@ -201,7 +201,7 @@ function filterDisplay(r, c, data) {
   data
     .filter(
       (data) =>
-        data.rating.rate >= r &&
+        data.rating.rate >= r ||
         data.price >= c[0] &&
         (c[1] === 200 ? data.price > 100 : data.price < 100)
     )
